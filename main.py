@@ -1,5 +1,9 @@
 from time import sleep
 import sys
+import os
+def clrscr():
+    _ = os.system("clear")
+
 
 print('''⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠛⠛⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣿⣿⣿⣿⣿
@@ -41,9 +45,12 @@ You want to continue the legacy of your prison escapes.'''
     print("Errrrrr")
     sleep(2)
     print('''
-    So
-    You decided to escape the prison
-    Now you need a plan
+So
+You decided to escape the prison
+Now you need a plan
     ''')
-
+    sleep(5)
 intro()
+clrscr()
+
+

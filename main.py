@@ -385,6 +385,20 @@ and then place them strategically in your bunks so that they appear to be sleepi
         else:
             print("Enter correct choice \n")
 
+def plan4():
+    dte='''11th June 1962 '''
+    for char in dte:
+        sleep(0.20)
+        sys.stdout.write(char)
+        sys.stdout.flush()
+    print(''' \n \n The raft is ready and it is time to initiate the plan.\n''')
+    print(''' You board the raft, launch it, and head two miles north to your destination, Angel Island. \n \n''')
+    dte='''YOU ARE FREE !!! \n'''
+    for char in dte:
+        sleep(0.20)
+        sys.stdout.write(char)
+        sys.stdout.flush()
 plan1()
 plan2()
 plan3()
+plan4()

@@ -1,3 +1,4 @@
+from ast import Break
 from time import sleep
 import sys
 import os
@@ -183,7 +184,8 @@ def seebehind():
     while(1):
             ans= input("Enter the choice no: ")
             if(ans == '1'):
-                break
+               print('''Now that you are all together, you begin plotting your escape, but digging a tunnel is too common and requires somewhat more complicated tools. ''') 
+               break 
             elif(ans == '2'):
                 print('''You refuse to include the other person since its your own so the other two inmates rat you out to the guards and follows your plan. ''')
                 print("TRY AGAIN")
@@ -262,5 +264,127 @@ def plan2():
             else:
                 print("Enter correct choice \n")
 
+def makeboat():
+    print('''You decide to set up a secret workshop in the empty top level of the cellblock.
+You stole and gathered over fifty raincoats and deciding to turn them into makeshift life preservers and a 6x14 foot rubber raft, carefully stitching the seams together and "vulcanizing" them by the prison's hot steam pipes. ''')
+    print('''Whoops! You completely forgot about the guards! They might notice your absence while you are in the workshop working on your plan.''')
+    dte = '''what do you do? \n \n'''
+    for char in dte:
+        sleep(0.20)
+        sys.stdout.write(char)
+        sys.stdout.flush()
+    print('''\n 1) Make dummy heads
+    2) Bribe the guard
+    3) Shoot the guard''')
+    while(1):
+            ans= input("Enter the choice no: ")
+            if(ans == '1'):
+                print('''You sculpt dummy heads out of a hand-made papier-mâché-like mixture of soap, toothpaste, concrete dust, and toilet paper, then give them a realistic appearance with paint from the maintenance shop and hair from the barbershop floor.
+and then place them strategically in your bunks so that they appear to be sleeping ''')
+                break
+            elif(ans == '2'):
+                print('''\nYou bribe the guard with money and alcohol that you stole and saved for later. But he still informs his officials about you, and you are sent to the dump to die.
+                TRY AGAIN''')
+            elif(ans == '3'):
+                print('''Your escape plan is still incomplete. And committing another crime while in prison is not a wise decision. You are sent to solitary confinement.''')
+            else:
+                print("Enter correct choice \n")
+
+def plan3():
+    print('''As you consider alternative strategies, the air vent at the back of your cell catches your eye. 
+You begin widening the ventilation ducts beneath the sinks using discarded saw blades found on the prison grounds, 
+metal spoons from the mess hall, and the makeshift drill improvised from the motor of the broken vacuum cleaner.  ''')
+    print('''uh but this hole is visible and if the guard comes by for his routine check, he might notice it and you will all be in big trouble. ''')
+    
+    dte = '''what do you do? \n \n'''
+    for char in dte:
+        sleep(0.20)
+        sys.stdout.write(char)
+        sys.stdout.flush()
+    print('''
+    1) Hide it
+    2) Leave it
+    3) Bribe the  guard''')
+    while(1):
+        ans= input("Enter the choice no: ")
+        if(ans == '1'):
+            print('''\nYou concealed the ducts with whatever you could find such as a suitcase or a piece of cardboard, etc.''')
+            dte = '''Once the ducts becomes wide enough to pass through what do you do? \n \n'''
+            for char in dte:
+                sleep(0.20)
+                sys.stdout.write(char)
+                sys.stdout.flush()
+            print("1)Enter the vent \n")
+            while(1):    
+                ans=input("Enter the choice : ")
+                if(ans=='1'):
+                    print('''On entering the vent you find a common, unguarded utility corridor.''')
+                    print('''You three make your way down this corridor and up to the roof of the cell block inside the building.
+The prison is surrounded by the cold, rough waters of the Pacific. So you'll need something to get to the other side.
+''')        
+                    dte = '''what do you do? \n \n'''
+                    for char in dte:
+                        sleep(0.20)
+                        sys.stdout.write(char)
+                        sys.stdout.flush()
+                    print('''\n 
+            1) Make a boat
+            2) Try swimming''')
+                    while(1):    
+                        ans12= input("Enter the choice no: ")
+                        if(ans12 == '1'):
+                            print('''You decide to set up a secret workshop in the empty top level of the cellblock.
+You stole and gathered over fifty raincoats and deciding to turn them into makeshift life preservers and a 6x14 foot rubber raft, carefully stitching the seams together and "vulcanizing" them by the prison's hot steam pipes. ''')
+                            print('''Whoops! You completely forgot about the guards! They might notice your absence while you are in the workshop working on your plan.''')
+                            dte = '''what do you do? \n \n'''
+                            for char in dte:
+                                sleep(0.20)
+                                sys.stdout.write(char)
+                                sys.stdout.flush()
+                            print('''\n 1) Make dummy heads
+    2) Bribe the guard
+    3) Shoot the guard''')
+                            while(1):
+                                ans= input("Enter the choice no: ")
+                                if(ans == '1'):
+                                    print('''You sculpt dummy heads out of a hand-made papier-mâché-like mixture of soap, toothpaste, concrete dust, and toilet paper, then give them a realistic appearance with paint from the maintenance shop and hair from the barbershop floor.
+and then place them strategically in your bunks so that they appear to be sleeping ''')
+                                    break
+                                elif(ans == '2'):
+                                    print('''\nYou bribe the guard with money and alcohol that you stole and saved for later. But he still informs his officials about you, and you are sent to the dump to die.
+                TRY AGAIN''')
+                                elif(ans == '3'):
+                                    print('''Your escape plan is still incomplete. And committing another crime while in prison is not a wise decision. You are sent to solitary confinement.''')
+                                else:
+                                    print("Enter correct choice \n")
+                        
+                            break
+                        
+                        elif(ans12=='2'):
+                            print('''you jumped into the water and attempted to swim to San Francisco, but quickly gave up. You drowned in the bay, and your body was swept out to sea by the bay's strong current. ''')
+                            print('''TRY AGAIN''')
+                    
+                        else:
+                            print("Enter correct choice \n")
+                        
+                    break
+
+                else:
+                    print("Enter correct choice \n")
+
+            break
+
+        elif(ans == '2'):
+            print('''\nYou are caught by the guards, who then beat you with a baton before throwing you into The Dump. The cold and dark isolation ward is hard to survive. 
+                TRY AGAIN''')
+            
+        elif(ans == '3'):
+            print('''\nYou bribe the guard with money and alcohol that you stole and saved for later. But he still informs his officials about you, and you are sent to the dump to die.
+                TRY AGAIN''')
+
+        else:
+            print("Enter correct choice \n")
+
 plan1()
 plan2()
+plan3()

@@ -51,7 +51,7 @@ You decided to escape the prison
 Now you need a plan
     ''')
     sleep(5)
-#intro()
+intro()
 clrscr()  
 
 def tools():
@@ -322,7 +322,7 @@ metal spoons from the mess hall, and the makeshift drill improvised from the mot
                     print('''You three make your way down this corridor and up to the roof of the cell block inside the building.
 The prison is surrounded by the cold, rough waters of the Pacific. So you'll need something to get to the other side.
 ''')        
-                    dte = '''what do you do? \n \n'''
+                    dte = '''what do you do? '''
                     for char in dte:
                         sleep(0.20)
                         sys.stdout.write(char)
@@ -342,8 +342,8 @@ You stole and gathered over fifty raincoats and deciding to turn them into makes
                                 sys.stdout.write(char)
                                 sys.stdout.flush()
                             print('''\n 1) Make dummy heads
-    2) Bribe the guard
-    3) Shoot the guard''')
+2) Bribe the guard
+3) Shoot the guard''')
                             while(1):
                                 ans= input("Enter the choice no: ")
                                 if(ans == '1'):
@@ -386,6 +386,7 @@ and then place them strategically in your bunks so that they appear to be sleepi
             print("Enter correct choice \n")
 
 def plan4():
+    clrscr()
     dte='''11th June 1962 '''
     for char in dte:
         sleep(0.20)
